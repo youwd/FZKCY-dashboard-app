@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import GeneralStatistics from './components/GeneralStatistics/GeneralStatistics'
 import EventStatistics from './components/EventStatistics/EventStatistics';
+import PipelineLengthStatistics from './components/PipelineLengthStatistics/PipelineLengthStatistics';
+
 
 import Map from 'ol/Map';
 import View from 'ol/View';
@@ -53,7 +55,8 @@ class Dashboard extends Component {
                 </div>
 
                 <div className='dashboard-side dashboard-right'>
-                    4
+                    <PipelineLengthStatistics />
+                    <PipelineLengthStatistics />
                 </div>
 
             </div>

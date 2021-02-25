@@ -5,7 +5,7 @@
         height: 100%;
     }
 
-    .dashboard-gensta{
+    .dashboard-gensta {
         width: 100%;
         position: absolute;
         top: 80px;
@@ -16,20 +16,38 @@
         top: 80px;
         height: calc(~"100vh - 80px");
         width: 350px;
-
         padding: 10px;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #091466;
+            border: 1px solid #404a92;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #6089e8;
+        }
     }
 
     .dashboard-left {
         left: 0;
-        background-image: linear-gradient(to right, rgba(2, 6, 33,1), rgba(19, 30, 66,0.3));
-        border: 1px solid blue;
+        background-image: linear-gradient(to right, #020621, rgba(19, 30, 66, 0.6));
+        border: 1px solid rgb(19, 30, 66);
     }
 
     .dashboard-right {
         right: 0;
-        background-image: linear-gradient(to right, rgba(19, 30, 66,0.3), rgba(2, 6, 33,1));
-        border: 1px solid red;
+        background-image: linear-gradient(to right, rgba(19, 30, 66, 0.6), rgba(2, 6, 33, 1));
+
+        border: 1px solid rgb(19, 30, 66);
+
     }
 
 

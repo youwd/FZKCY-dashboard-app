@@ -86,18 +86,52 @@
             .e-c-sta-content-card {
                 height: 150px;
                 width: 30%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .e-c-sta-content-card-icon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #fff;
+                    background-color: rgba(191, 141, 132,0.5);
+                    margin-top: 15px;
+                }
+
+                .e-c-sta-content-card-num{
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+                .e-c-sta-content-card-label{
+                    font-size: 12px;
+                    color: #c0e1ea;
+                }
             }
 
-            .cred{
+            .cred {
                 background-image: linear-gradient(135deg, #c03321, #7e2216);
             }
 
-            .cyellow{
+            .cyellow {
                 background-image: linear-gradient(135deg, #cf8322, #834d08);
             }
 
-            .cgreen{
+            .cgreen {
                 background-image: linear-gradient(135deg, #1b8755, #0c571f);
+            }
+
+
+            .e-c-sta-content-card-Column{
+                height: 250px;
+                width: 300px;
             }
         }
     }
